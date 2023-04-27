@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;  
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background: #121214;
+}
+
+header button {
+  position: absolute;
+  right: 4.0rem;
+  top: 3.2rem;
+}
+
+header button.light-mode svg path {
+  fill: #f8fafc;;
+}
+
+header button.dark-mode svg path {
+  fill: #121214;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  gap: 1.6rem;
+}
+
+#timer {
+  color: #FFFFFF;
+  display: flex;
+  font-weight: 700;
+  font-size: 8.8rem;
+  line-height: 10.3rem;
+}
+
+#controls {
+  background-color: #14213d;
+  border-radius: 999.9rem;
+  display: flex;
+  gap: 3.2rem;
+  width: 22.8rem;
+  height: 10.8rem;
+  justify-content: center;
+}
+
+#controls button svg path {
+  fill: #f8fafc;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  right: 4.0rem;
+  bottom: 3.2rem;
+}
+
+#container footer button.sound-on svg path {
+  fill: #14213d;
+}
+
+.hide {
+  display: none;
+}
+
+/* dark mode */
+
+#container.dark {
+  transition: background-color .5s ease;
+}
+
+#container.light {
+  background-color: #f8fafc;;
+  transition: background-color .5s ease;
+}
+
+#container.light #timer {
+  color: #121214;
+}
+
+#container.light #controls button svg path {
+  fill: #000;
+}
+
+#container.light footer button.sound-off svg path {
+  fill: #000;
+}
